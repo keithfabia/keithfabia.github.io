@@ -1,0 +1,1492 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>96xx宅男福利社_官方视频社区_原创高清内容与创作者生态</title>
+<meta name="description" content="96xx宅男福利社官方网站，聚焦影视、动漫、游戏、数码等兴趣领域的原创视频社区，汇聚专业创作者与企业精品内容，持续运营、正版高清、值得信赖。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316233f'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%2300c2b7' stroke-width='4'/%3E%3Cpolygon points='28,22 46,32 28,42' fill='%23ff5d73'/%3E%3C/svg%3E">
+<style>
+:root{
+  --v96-ink:#0f1a2b;
+  --v96-deep:#16233f;
+  --v96-blue:#2456a6;
+  --v96-ice:#eef3fa;
+  --v96-line:#d7e1ef;
+  --v96-cyan:#00b8ad;
+  --v96-red:#ff5d73;
+  --v96-mute:#5d6d84;
+  --v96-white:#ffffff;
+  --v96-radius:14px;
+  --v96-shadow:0 10px 30px rgba(22,35,63,.10);
+  --v96-head-h:104px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--v96-head-h)}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  color:var(--v96-ink);background:var(--v96-white);line-height:1.75;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+.v96-wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.v96-sticky-head{position:sticky;top:0;z-index:80;box-shadow:0 2px 18px rgba(15,26,43,.08)}
+/* ---------- 公告条 ---------- */
+.v96-announce{
+  background:linear-gradient(90deg,var(--v96-deep),var(--v96-blue));
+  color:#e8f1ff;font-size:13.5px;letter-spacing:.2px;
+}
+.v96-announce .v96-wrap{display:flex;align-items:center;gap:12px;min-height:38px;padding-top:7px;padding-bottom:7px}
+.v96-announce-tag{
+  flex:0 0 auto;background:var(--v96-red);color:#fff;font-size:11.5px;font-weight:700;
+  padding:1px 9px;border-radius:20px;letter-spacing:1px;
+}
+.v96-announce-track{display:flex;gap:26px;overflow:hidden;white-space:nowrap;flex:1;font-size:13px}
+.v96-announce-track span{opacity:.92}
+.v96-announce-track b{color:#7ff3e9;font-weight:600}
+/* ---------- 页头 ---------- */
+.v96-header{background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--v96-line)}
+.v96-header .v96-wrap{display:flex;align-items:center;gap:26px;min-height:64px}
+.v96-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px;color:var(--v96-deep)}
+.v96-logo-mark{width:34px;height:34px;border-radius:9px;background:var(--v96-deep);display:grid;place-items:center;color:#fff;font-size:15px;flex:0 0 auto}
+.v96-logo small{display:block;font-size:10px;font-weight:500;letter-spacing:2.4px;color:var(--v96-mute)}
+.v96-nav{display:flex;gap:4px;margin-left:6px;flex:1}
+.v96-nav a{
+  padding:8px 13px;border-radius:9px;font-size:14.5px;color:#2a3a52;font-weight:500;transition:.2s;
+}
+.v96-nav a:hover{background:var(--v96-ice);color:var(--v96-blue)}
+.v96-header-tools{display:flex;align-items:center;gap:10px;margin-left:auto}
+.v96-search{
+  display:flex;align-items:center;background:var(--v96-ice);border:1px solid var(--v96-line);
+  border-radius:24px;padding:4px 4px 4px 14px;transition:.2s;
+}
+.v96-search:focus-within{border-color:var(--v96-cyan);box-shadow:0 0 0 3px rgba(0,184,173,.16)}
+.v96-search input{border:none;background:none;outline:none;font-size:13.5px;width:148px;color:var(--v96-ink)}
+.v96-search button{
+  background:var(--v96-blue);color:#fff;border-radius:20px;font-size:13px;padding:5px 14px;font-weight:600;
+}
+.v96-btn-ghost{
+  border:1px solid var(--v96-line);border-radius:22px;padding:7px 16px;font-size:13.5px;font-weight:600;
+  color:var(--v96-deep);transition:.2s;
+}
+.v96-btn-ghost:hover{border-color:var(--v96-cyan);color:var(--v96-cyan)}
+.v96-nav-toggle{display:none;width:40px;height:40px;border-radius:10px;background:var(--v96-ice);font-size:20px;line-height:1;place-items:center;color:var(--v96-deep)}
+.v96-search-hint{
+  max-width:1200px;margin:0 auto;padding:0 24px;font-size:12.5px;color:var(--v96-blue);
+  min-height:0;transition:.2s;
+}
+.v96-search-hint:not(:empty){padding-bottom:8px}
+/* ---------- 通用 section ---------- */
+.v96-section{padding:64px 0}
+.v96-section--tint{background:var(--v96-ice)}
+.v96-section--dark{background:var(--v96-deep);color:#dfe9f7}
+.v96-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:2px;
+  color:var(--v96-cyan);text-transform:uppercase;margin-bottom:12px;
+}
+.v96-eyebrow::before{content:"";width:22px;height:2px;background:var(--v96-cyan);display:block}
+.v96-h2{font-size:clamp(24px,3vw,32px);line-height:1.3;letter-spacing:.4px;margin-bottom:14px;font-weight:800}
+.v96-h2 em{font-style:normal;color:var(--v96-blue)}
+.v96-section--dark .v96-h2 em{color:#6fe8dd}
+.v96-lead{color:var(--v96-mute);max-width:760px;font-size:15.5px}
+.v96-section--dark .v96-lead{color:#a9bdd8}
+.v96-sec-head{margin-bottom:38px}
+.v96-h3{font-size:18px;font-weight:700;line-height:1.5;margin-bottom:8px;color:var(--v96-deep)}
+.v96-section--dark .v96-h3{color:#fff}
+/* ---------- 首屏（4:6 大幅图文） ---------- */
+.v96-hero{padding:52px 0 60px;background:
+  radial-gradient(900px 420px at 88% -10%, rgba(36,86,166,.12), transparent 62%),
+  radial-gradient(600px 360px at 0% 20%, rgba(0,184,173,.10), transparent 60%),
+  var(--v96-white);
+}
+.v96-hero-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr);gap:48px;align-items:center}
+.v96-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;
+  color:var(--v96-blue);background:#e7f0ff;border:1px solid #c9dcff;padding:4px 13px;border-radius:30px;margin-bottom:18px;
+}
+.v96-hero h1{font-size:clamp(38px,5.4vw,62px);line-height:1.1;letter-spacing:1px;font-weight:900;color:var(--v96-deep);margin-bottom:18px}
+.v96-hero h1 span{color:var(--v96-blue)}
+.v96-hero-slogan{font-size:17px;font-weight:600;color:#334a68;margin-bottom:16px}
+.v96-hero-intro{font-size:15px;color:var(--v96-mute);margin-bottom:26px}
+.v96-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+.v96-btn-primary{
+  background:linear-gradient(135deg,var(--v96-blue),#1b3e7c);color:#fff;border-radius:26px;
+  padding:12px 26px;font-size:14.5px;font-weight:700;letter-spacing:.5px;box-shadow:0 8px 22px rgba(36,86,166,.28);transition:.2s;
+}
+.v96-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(36,86,166,.36)}
+.v96-btn-line{
+  border-radius:26px;padding:11px 24px;font-size:14.5px;font-weight:700;border:1.5px solid var(--v96-deep);
+  color:var(--v96-deep);transition:.2s;
+}
+.v96-btn-line:hover{background:var(--v96-deep);color:#fff}
+.v96-hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;border-top:1px solid var(--v96-line);padding-top:22px}
+.v96-hero-stats b{display:block;font-size:24px;font-weight:900;color:var(--v96-deep);letter-spacing:.5px}
+.v96-hero-stats b i{font-style:normal;font-size:13px;font-weight:600;color:var(--v96-cyan);margin-left:2px}
+.v96-hero-stats span{font-size:12.5px;color:var(--v96-mute)}
+.v96-hero-visual{position:relative}
+.v96-hero-visual img{border-radius:22px;box-shadow:0 26px 60px rgba(22,35,63,.22);aspect-ratio:16/10;object-fit:cover;width:100%}
+.v96-hero-caption{
+  position:absolute;left:18px;bottom:18px;right:18px;background:rgba(15,26,43,.82);backdrop-filter:blur(6px);
+  color:#e6effa;padding:12px 16px;border-radius:12px;font-size:13px;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.v96-hero-caption b{color:#7ff3e9;font-size:13px}
+.v96-play-dot{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:74px;height:74px;border-radius:50%;
+  background:rgba(255,255,255,.9);display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+.v96-play-dot::after{content:"";border-left:20px solid var(--v96-blue);border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:4px}
+/* ---------- 焦点 + 视频列表 ---------- */
+.v96-focus-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:30px;align-items:start}
+.v96-focus-main{border-radius:var(--v96-radius);overflow:hidden;background:#0e1930;box-shadow:var(--v96-shadow)}
+.v96-focus-main img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.v96-focus-body{padding:22px 24px 24px;color:#dbe7f7}
+.v96-focus-body .v96-tag{background:rgba(0,184,173,.16);color:#7ff3e9;border-color:rgba(0,184,173,.4)}
+.v96-focus-body h3{font-size:22px;line-height:1.4;margin:10px 0 8px;color:#fff;font-weight:800}
+.v96-focus-body p{font-size:14px;color:#a9bdd8;margin-bottom:16px}
+.v96-meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:#94aac7;align-items:center}
+.v96-tag{
+  display:inline-block;font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:14px;
+  background:#e9f1fb;color:var(--v96-blue);border:1px solid #d3e2f6;margin-right:6px;
+}
+.v96-mini-list{display:grid;gap:14px}
+.v96-mini-item{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;
+  background:#fff;border:1px solid var(--v96-line);border-radius:12px;padding:16px 18px;transition:.2s;
+}
+.v96-mini-item:hover{border-color:var(--v96-cyan);transform:translateX(3px);box-shadow:var(--v96-shadow)}
+.v96-mini-item h4{font-size:15px;font-weight:700;line-height:1.5;color:var(--v96-deep)}
+.v96-mini-item p{font-size:12.5px;color:var(--v96-mute);margin-top:3px}
+.v96-mini-play{
+  width:42px;height:42px;border-radius:50%;background:var(--v96-ice);color:var(--v96-blue);
+  display:grid;place-items:center;font-size:13px;font-weight:800;flex:0 0 auto;
+}
+/* ---------- 视频流两列卡片 ---------- */
+.v96-video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.v96-video-card{
+  background:#fff;border:1px solid var(--v96-line);border-radius:var(--v96-radius);overflow:hidden;
+  display:flex;flex-direction:column;transition:.24s;min-width:0;
+}
+.v96-video-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(22,35,63,.14);border-color:#bfd4ef}
+.v96-video-cover{position:relative;overflow:hidden}
+.v96-video-cover img{aspect-ratio:16/9;object-fit:cover;width:100%;transition:.4s}
+.v96-video-card:hover .v96-video-cover img{transform:scale(1.04)}
+.v96-video-dur{
+  position:absolute;right:10px;bottom:10px;background:rgba(10,18,32,.82);color:#fff;font-size:11.5px;
+  padding:2px 8px;border-radius:6px;letter-spacing:.5px;
+}
+.v96-video-label{
+  position:absolute;left:10px;top:10px;background:var(--v96-red);color:#fff;font-size:11px;font-weight:700;
+  padding:2px 9px;border-radius:6px;letter-spacing:.5px;
+}
+.v96-video-body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1;min-width:0}
+.v96-video-body h3{font-size:16.5px;line-height:1.5;font-weight:800;color:var(--v96-deep);margin-bottom:7px}
+.v96-video-body p{font-size:13.5px;color:var(--v96-mute);margin-bottom:12px;flex:1}
+.v96-video-meta{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:#7b8ca3;margin-bottom:12px;align-items:center}
+.v96-video-foot{display:flex;align-items:center;gap:8px;flex-wrap:wrap;border-top:1px dashed var(--v96-line);padding-top:12px}
+.v96-act{
+  display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:600;color:#465a76;
+  background:var(--v96-ice);border-radius:18px;padding:5px 12px;transition:.18s;
+}
+.v96-act:hover{background:#dce9f9;color:var(--v96-blue)}
+.v96-act.is-on{background:#ffe9ec;color:#d63a52}
+.v96-act.is-saved{background:#e2fbf8;color:#008a82}
+.v96-author-chip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:#40546f;font-weight:600}
+.v96-ava{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:11.5px;font-weight:800;color:#fff;flex:0 0 auto;
+}
+/* ---------- 专题 ---------- */
+.v96-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.v96-topic{
+  background:#fff;border-radius:var(--v96-radius);border:1px solid var(--v96-line);padding:22px 22px 20px;min-width:0;transition:.2s;
+}
+.v96-topic:hover{box-shadow:var(--v96-shadow);transform:translateY(-3px)}
+.v96-topic-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.v96-topic-status{font-size:11.5px;font-weight:700;color:#008a82;background:#e2fbf8;border-radius:12px;padding:2px 10px}
+.v96-topic-status.is-done{color:#8a5a00;background:#fff3da}
+.v96-topic h3{font-size:17.5px;font-weight:800;color:var(--v96-deep);margin-bottom:8px;line-height:1.5}
+.v96-topic>p{font-size:13.5px;color:var(--v96-mute);margin-bottom:14px}
+.v96-topic ul{display:grid;gap:9px}
+.v96-topic li{
+  font-size:13px;color:#3b4f6b;display:flex;gap:8px;align-items:flex-start;line-height:1.6;
+}
+.v96-topic li::before{content:"▸";color:var(--v96-cyan);font-size:12px;line-height:1.6;flex:0 0 auto}
+/* ---------- 关键词解析 ---------- */
+.v96-explain{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
+.v96-explain-body p{font-size:14.5px;color:#41536e;margin-bottom:14px}
+.v96-explain-side{display:grid;gap:18px;align-content:start}
+.v96-stat-card{
+  background:linear-gradient(150deg,#12203a,#1b3560);color:#e7f0fd;border-radius:var(--v96-radius);
+  padding:20px 22px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
+}
+.v96-stat-card b{display:block;font-size:22px;font-weight:900;color:#7ff3e9}
+.v96-stat-card span{font-size:12px;color:#a9bdd8}
+.v96-pull{
+  border-left:3px solid var(--v96-red);background:#fff5f6;border-radius:0 12px 12px 0;padding:16px 20px;
+  font-size:13.5px;color:#63303a;
+}
+.v96-pull b{color:#c02a42}
+/* ---------- 创作者 ---------- */
+.v96-author-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.v96-author-card{
+  background:#fff;border:1px solid var(--v96-line);border-radius:var(--v96-radius);padding:22px 18px;text-align:center;
+  min-width:0;transition:.2s;
+}
+.v96-author-card:hover{box-shadow:var(--v96-shadow);transform:translateY(-3px);border-color:#c6daf3}
+.v96-author-card .v96-ava{width:64px;height:64px;font-size:23px;margin:0 auto 12px;border-radius:20px}
+.v96-author-card h3{font-size:16px;font-weight:800;color:var(--v96-deep)}
+.v96-author-field{font-size:12px;color:var(--v96-blue);font-weight:600;margin:4px 0 8px}
+.v96-author-card p{font-size:12.5px;color:var(--v96-mute);line-height:1.65;margin-bottom:12px;text-align:left}
+.v96-author-nums{display:flex;justify-content:center;gap:16px;font-size:12px;color:#66788f;border-top:1px dashed var(--v96-line);padding-top:11px;margin-bottom:12px}
+.v96-author-nums b{color:var(--v96-deep);font-size:13px;display:block}
+/* ---------- 榜单/评论 ---------- */
+.v96-rank-review{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:32px;align-items:start}
+.v96-rank-card{background:#fff;border:1px solid var(--v96-line);border-radius:var(--v96-radius);overflow:hidden}
+.v96-rank-head{padding:16px 20px;background:linear-gradient(90deg,#eef4fc,#fff);border-bottom:1px solid var(--v96-line);display:flex;justify-content:space-between;align-items:center}
+.v96-rank-head b{font-size:15px;color:var(--v96-deep)}
+.v96-rank-head span{font-size:11.5px;color:var(--v96-cyan);font-weight:700;letter-spacing:1px}
+.v96-rank-list{padding:8px 0}
+.v96-rank-item{display:flex;align-items:center;gap:13px;padding:11px 20px;font-size:13.5px;transition:.18s}
+.v96-rank-item:hover{background:#f5f9ff}
+.v96-rank-no{width:24px;height:24px;border-radius:7px;background:var(--v96-ice);color:var(--v96-blue);font-size:12px;font-weight:800;display:grid;place-items:center;flex:0 0 auto}
+.v96-rank-item:nth-child(1) .v96-rank-no{background:var(--v96-red);color:#fff}
+.v96-rank-item:nth-child(2) .v96-rank-no{background:var(--v96-blue);color:#fff}
+.v96-rank-item:nth-child(3) .v96-rank-no{background:var(--v96-cyan);color:#fff}
+.v96-rank-item span{flex:1;color:#2f425d;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.v96-rank-item em{font-style:normal;font-size:12px;color:#8d9db2}
+.v96-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.v96-review{
+  background:#fff;border:1px solid var(--v96-line);border-radius:12px;padding:18px 18px 16px;min-width:0;
+}
+.v96-review-top{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+.v96-review-top .v96-ava{width:30px;height:30px;font-size:12px}
+.v96-review-name{font-size:13px;font-weight:700;color:var(--v96-deep)}
+.v96-review p{font-size:13px;color:#4a5c76;line-height:1.72}
+.v96-review small{display:block;margin-top:8px;font-size:11.5px;color:#94a3b8}
+.v96-stars{color:#f5a623;font-size:12px;letter-spacing:1px;margin-left:auto}
+/* ---------- 动态 / 合作 / FAQ ---------- */
+.v96-three{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:36px;align-items:start}
+.v96-timeline{display:grid;gap:0;position:relative}
+.v96-timeline-item{display:grid;grid-template-columns:88px minmax(0,1fr);gap:16px;padding-bottom:20px;position:relative}
+.v96-timeline-item::before{content:"";position:absolute;left:99px;top:24px;bottom:0;width:1px;background:var(--v96-line)}
+.v96-timeline-item:last-child::before{display:none}
+.v96-timeline-date{font-size:12px;font-weight:700;color:var(--v96-blue);padding-top:3px}
+.v96-timeline-body h3{font-size:14.5px;font-weight:700;color:var(--v96-deep);margin-bottom:3px}
+.v96-timeline-body p{font-size:13px;color:var(--v96-mute)}
+.v96-partner-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.v96-partner{
+  border:1px solid var(--v96-line);border-radius:12px;padding:16px;display:flex;gap:12px;align-items:center;background:#fff;
+}
+.v96-partner-mark{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:14px;color:#fff;flex:0 0 auto}
+.v96-partner b{display:block;font-size:13.5px;color:var(--v96-deep)}
+.v96-partner span{font-size:11.5px;color:var(--v96-mute)}
+.v96-faq{display:grid;gap:12px}
+.v96-faq details{
+  background:#fff;border:1px solid var(--v96-line);border-radius:12px;padding:0 20px;transition:.2s;
+}
+.v96-faq details[open]{border-color:#bfd4ef;box-shadow:var(--v96-shadow)}
+.v96-faq summary{
+  cursor:pointer;list-style:none;padding:15px 0;font-size:14.5px;font-weight:700;color:var(--v96-deep);
+  display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+.v96-faq summary::-webkit-details-marker{display:none}
+.v96-faq summary::after{content:"+";font-size:19px;color:var(--v96-cyan);font-weight:400;transition:.2s;flex:0 0 auto}
+.v96-faq details[open] summary::after{content:"−"}
+.v96-faq p{font-size:13.5px;color:#4a5c76;padding-bottom:16px}
+/* ---------- 投稿 CTA ---------- */
+.v96-cta{
+  background:linear-gradient(120deg,#16233f,#2456a6 60%,#0e8f89);color:#fff;border-radius:22px;
+  padding:44px 42px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;
+  box-shadow:0 24px 60px rgba(22,35,63,.28);
+}
+.v96-cta h2{font-size:clamp(22px,2.6vw,29px);margin-bottom:10px;line-height:1.35;font-weight:800}
+.v96-cta p{font-size:14.5px;color:#c7d9f1;max-width:640px}
+.v96-cta .v96-btn-primary{background:#fff;color:var(--v96-deep);box-shadow:0 8px 20px rgba(0,0,0,.2)}
+/* ---------- 页脚 ---------- */
+.v96-footer{background:#0d1728;color:#93a8c6;padding:52px 0 0;font-size:13.5px}
+.v96-footer-grid{display:grid;grid-template-columns:minmax(0,4fr) repeat(3,minmax(0,2fr));gap:34px;padding-bottom:38px}
+.v96-footer .v96-logo{color:#fff}
+.v96-footer .v96-logo small{color:#7f97b8}
+.v96-footer p{line-height:1.8;margin-top:12px;max-width:330px;color:#8399b8}
+.v96-footer h4{color:#dbe7f7;font-size:13.5px;letter-spacing:1px;margin-bottom:14px;font-weight:700}
+.v96-footer li{margin-bottom:9px}
+.v96-footer a:hover{color:#7ff3e9}
+.v96-footer-bottom{border-top:1px solid rgba(255,255,255,.09);padding:18px 0;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12.5px;color:#6f88a9}
+/* ---------- 回到顶部 ---------- */
+.v96-top{
+  position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:13px;background:var(--v96-deep);color:#fff;
+  display:grid;place-items:center;font-size:18px;box-shadow:0 10px 26px rgba(22,35,63,.32);z-index:70;
+  opacity:0;pointer-events:none;transition:.25s;
+}
+.v96-top.is-show{opacity:1;pointer-events:auto}
+/* ---------- Toast & 弹窗 ---------- */
+.v96-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,16px);background:var(--v96-deep);color:#eaf2fd;
+  padding:11px 22px;border-radius:30px;font-size:13.5px;box-shadow:0 12px 30px rgba(0,0,0,.28);
+  opacity:0;pointer-events:none;transition:.28s;z-index:120;max-width:90vw;
+}
+.v96-toast.is-show{opacity:1;transform:translate(-50%,0)}
+.v96-modal{
+  position:fixed;inset:0;z-index:110;display:grid;place-items:center;padding:20px;
+  background:rgba(9,17,30,.62);backdrop-filter:blur(3px);opacity:0;pointer-events:none;transition:.24s;
+}
+.v96-modal.is-show{opacity:1;pointer-events:auto}
+.v96-modal-box{
+  background:#fff;border-radius:18px;max-width:520px;width:100%;max-height:86vh;overflow:auto;
+  padding:28px 28px 26px;transform:translateY(14px);transition:.24s;box-shadow:0 30px 70px rgba(0,0,0,.34);
+}
+.v96-modal.is-show .v96-modal-box{transform:translateY(0)}
+.v96-modal-box h3{font-size:19px;font-weight:800;color:var(--v96-deep);margin-bottom:10px}
+.v96-modal-box p{font-size:13.5px;color:var(--v96-mute);margin-bottom:14px}
+.v96-field{display:grid;gap:6px;margin-bottom:12px}
+.v96-field label{font-size:12.5px;font-weight:700;color:#3d5170}
+.v96-field input,.v96-field textarea,.v96-field select{
+  border:1px solid var(--v96-line);border-radius:10px;padding:10px 12px;font:inherit;font-size:13.5px;
+  outline:none;background:#fafcff;color:var(--v96-ink);width:100%;
+}
+.v96-field input:focus,.v96-field textarea:focus,.v96-field select:focus{border-color:var(--v96-cyan);box-shadow:0 0 0 3px rgba(0,184,173,.14)}
+.v96-modal-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.v96-modal-close{
+  float:right;width:32px;height:32px;border-radius:50%;background:var(--v96-ice);color:#42566f;
+  display:grid;place-items:center;font-size:16px;margin:-8px -8px 0 10px;
+}
+.v96-hidden{display:none!important}
+/* ---------- 响应式 ---------- */
+@media (max-width:1020px){
+  .v96-hero-grid{grid-template-columns:1fr;gap:34px}
+  .v96-focus-grid{grid-template-columns:1fr}
+  .v96-author-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .v96-topic-grid{grid-template-columns:1fr 1fr}
+  .v96-explain{grid-template-columns:1fr}
+  .v96-rank-review{grid-template-columns:1fr}
+  .v96-three{grid-template-columns:1fr}
+  .v96-footer-grid{grid-template-columns:1fr 1fr}
+  .v96-cta{grid-template-columns:1fr;padding:34px 26px}
+}
+@media (max-width:760px){
+  :root{--v96-head-h:150px}
+  .v96-wrap{padding:0 18px}
+  .v96-nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--v96-line);
+    flex-direction:column;padding:10px 18px 16px;gap:2px;box-shadow:0 18px 30px rgba(15,26,43,.12)}
+  .v96-nav.is-open{display:flex}
+  .v96-header .v96-wrap{position:relative;flex-wrap:wrap;min-height:58px;padding-top:8px;padding-bottom:8px;gap:12px}
+  .v96-nav-toggle{display:grid;margin-left:auto}
+  .v96-header-tools{margin-left:0;order:5}
+  .v96-search input{width:112px}
+  .v96-btn-ghost.v96-hide-sm{display:none}
+  .v96-search{display:none}
+  .v96-hero{padding:34px 0 44px}
+  .v96-section{padding:46px 0}
+  .v96-video-grid{grid-template-columns:1fr}
+  .v96-topic-grid{grid-template-columns:1fr}
+  .v96-author-grid{grid-template-columns:1fr}
+  .v96-review-grid{grid-template-columns:1fr}
+  .v96-footer-grid{grid-template-columns:1fr}
+  .v96-hero-stats b{font-size:20px}
+  .v96-mini-item{grid-template-columns:minmax(0,1fr)}
+  .v96-play-dot{width:58px;height:58px}
+  .v96-announce-track{font-size:12px}
+  .v96-partner-grid{grid-template-columns:1fr}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ============ 吸顶区：公告条 + 页头 ============ -->
+<div class="v96-sticky-head" id="v96Top">
+  <div class="v96-announce">
+    <div class="v96-wrap">
+      <span class="v96-announce-tag">官方发布</span>
+      <div class="v96-announce-track">
+        <span><b>11-22 新增</b>「夜航放映室」第 3 季第 6 集上线，支持 1080P 高清观看</span>
+        <span><b>11-20 新增</b> 创作者激励计划第二期开放报名，投稿即得流量扶持</span>
+        <span><b>11-18 更新</b> 社区口碑榜新增「数码测评」垂直分区</span>
+      </div>
+    </div>
+  </div>
+  <header class="v96-header">
+    <div class="v96-wrap">
+      <a class="v96-logo" href="#v96Home" aria-label="96xx宅男福利社 官方网站首页">
+        <span class="v96-logo-mark">96</span>
+        <span>96xx宅男福利社<small>OFFICIAL VIDEO</small></span>
+      </a>
+      <nav class="v96-nav" id="v96Nav" aria-label="主导航">
+        <a href="#v96Home">首页</a>
+        <a href="#v96Focus">焦点内容</a>
+        <a href="#v96Videos">视频社区</a>
+        <a href="#v96Topics">专题企划</a>
+        <a href="#v96Creators">创作者</a>
+        <a href="#v96Rank">口碑榜</a>
+        <a href="#v96News">企业动态</a>
+        <a href="#v96Faq">帮助</a>
+      </nav>
+      <div class="v96-header-tools">
+        <form class="v96-search" id="v96SearchForm" role="search">
+          <input type="search" id="v96SearchInput" placeholder="搜索视频 / 创作者 / 专题" aria-label="搜索视频、创作者或专题">
+          <button type="submit">搜索</button>
+        </form>
+        <button class="v96-btn-ghost v96-hide-sm" type="button" id="v96SubmitOpen">投稿入口</button>
+        <button class="v96-nav-toggle" id="v96NavToggle" type="button" aria-expanded="false" aria-controls="v96Nav" aria-label="展开导航菜单">☰</button>
+      </div>
+    </div>
+    <div class="v96-search-hint" id="v96SearchHint" aria-live="polite"></div>
+  </header>
+</div>
+
+<!-- ============ 首屏 ============ -->
+<section class="v96-hero" id="v96Home">
+  <div class="v96-wrap v96-hero-grid">
+    <div class="v96-hero-copy">
+      <span class="v96-hero-badge">● 官方网站 · 持续运营中</span>
+      <h1>96xx宅男福利社</h1>
+      <p class="v96-hero-slogan">给热爱一点回声，给兴趣一个正版高清的社区</p>
+      <p class="v96-hero-intro">
+        96xx宅男福利社是一家专注于兴趣影视与创作者内容的企业级视频平台。作为深耕垂直领域的官方网站，
+        我们以原创、正版、高清为底线，围绕影视、动漫、游戏、数码等题材搭建品质内容生态，
+        让每一位用户与创作者都能在此找到值得信赖的陪伴与真实的力量。
+      </p>
+      <div class="v96-hero-actions">
+        <a class="v96-btn-primary" href="#v96Videos">观看精品内容</a>
+        <a class="v96-btn-line" href="#v96Creators">认识创作者</a>
+        <button class="v96-btn-line" type="button" id="v96HeroSubmit">我要投稿</button>
+      </div>
+      <div class="v96-hero-stats">
+        <div><b>12.6<i>万</i></b><span>原创视频存量</span></div>
+        <div><b>1,840<i>位</i></b><span>签约创作者</span></div>
+        <div><b>4,300<i>万</i></b><span>累计播放量</span></div>
+      </div>
+    </div>
+    <div class="v96-hero-visual">
+      <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230d1b33'/%3E%3Cstop offset='1' stop-color='%231e4a8a'/%3E%3C/linearGradient%3E%3ClinearGradient id='glow' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%2300d5c9' stop-opacity='.85'/%3E%3Cstop offset='1' stop-color='%2300d5c9' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23bg)'/%3E%3Ccircle cx='620' cy='120' r='190' fill='%232456a6' opacity='.38'/%3E%3Ccircle cx='150' cy='420' r='150' fill='%2300b8ad' opacity='.20'/%3E%3Crect x='0' y='330' width='800' height='170' fill='url(%23glow)' opacity='.30'/%3E%3Crect x='90' y='120' width='260' height='160' rx='12' fill='%23ffffff' opacity='.08'/%3E%3Crect x='110' y='145' width='150' height='9' rx='4' fill='%23ffffff' opacity='.55'/%3E%3Crect x='110' y='170' width='215' height='7' rx='3' fill='%23ffffff' opacity='.30'/%3E%3Crect x='110' y='188' width='180' height='7' rx='3' fill='%23ffffff' opacity='.30'/%3E%3Crect x='110' y='220' width='96' height='30' rx='15' fill='%23ff5d73'/%3E%3Cpolygon points='360,250 470,190 470,310' fill='%237ff3e9' opacity='.85'/%3E%3Crect x='520' y='300' width='200' height='10' rx='5' fill='%23ffffff' opacity='.5'/%3E%3Crect x='520' y='326' width='130' height='8' rx='4' fill='%23ffffff' opacity='.28'/%3E%3Crect x='520' y='352' width='166' height='8' rx='4' fill='%23ffffff' opacity='.28'/%3E%3Ccircle cx='610' cy='200' r='44' fill='none' stroke='%237ff3e9' stroke-width='3' opacity='.7'/%3E%3C/svg%3E"
+        alt="96xx宅男福利社官方首屏主视觉：深夜蓝背景下的高清视频播放界面与创作者内容卡片" width="800" height="500">
+      <span class="v96-play-dot" aria-hidden="true"></span>
+      <div class="v96-hero-caption">
+        <span>本周官方精选 · 夜航放映室 第 3 季</span>
+        <b>1080P 高清</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 焦点内容 ============ -->
+<section class="v96-section v96-section--dark" id="v96Focus">
+  <div class="v96-wrap">
+    <div class="v96-sec-head">
+      <span class="v96-eyebrow">Focus · 焦点推荐</span>
+      <h2 class="v96-h2">今日焦点：<em>值得反复观看的原创影像</em></h2>
+      <p class="v96-lead">由 96xx宅男福利社编辑团队与企业内容委员会联合推荐，聚焦深度测评、创作幕后与城市探索三类精品内容，每周更新官方焦点位。</p>
+    </div>
+    <div class="v96-focus-grid">
+      <article class="v96-focus-main">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23152340'/%3E%3Cstop offset='1' stop-color='%23335f9c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f1)'/%3E%3Cg opacity='.9'%3E%3Ccircle cx='210' cy='240' r='95' fill='none' stroke='%2300d5c9' stroke-width='6'/%3E%3Ccircle cx='210' cy='240' r='58' fill='%2300d5c9' opacity='.14'/%3E%3Cpolygon points='192,205 250,240 192,275' fill='%237ff3e9'/%3E%3C/g%3E%3Crect x='370' y='140' width='330' height='16' rx='8' fill='%23ffffff' opacity='.65'/%3E%3Crect x='370' y='178' width='260' height='11' rx='5' fill='%23ffffff' opacity='.32'/%3E%3Crect x='370' y='204' width='300' height='11' rx='5' fill='%23ffffff' opacity='.32'/%3E%3Crect x='370' y='230' width='210' height='11' rx='5' fill='%23ffffff' opacity='.32'/%3E%3Crect x='370' y='286' width='120' height='32' rx='16' fill='%23ff5d73'/%3E%3Crect x='504' y='286' width='120' height='32' rx='16' fill='%23ffffff' opacity='.18'/%3E%3C/svg%3E"
+          alt="焦点内容封面：创作者在深夜工作台前调试设备录制深度测评视频" width="800" height="450">
+        <div class="v96-focus-body">
+          <span class="v96-tag">创作幕后</span><span class="v96-tag">深度测评</span>
+          <h3>《一台设备拍一整部短片》：幕后拆解 48 小时实拍流程</h3>
+          <p>96xx宅男福利社官方企划「幕后实验室」第 9 期，跟拍三位创作者从脚本、布光到剪辑交付的全过程，附完整器材清单与调色参数，适合入门与进阶同步参考。</p>
+          <div class="v96-meta">
+            <span>作者：阿野的取景框</span><span>播放 48.2 万</span><span>点赞 3.1 万</span><span>收藏 1.7 万</span>
+          </div>
+        </div>
+      </article>
+      <div class="v96-mini-list">
+        <article class="v96-mini-item">
+          <div>
+            <h4>《通勤路上的十种光影》城市探索影像日记</h4>
+            <p>城市探索 · 阿澈 · 播放 21.6 万</p>
+          </div>
+          <span class="v96-mini-play" aria-hidden="true">▶</span>
+        </article>
+        <article class="v96-mini-item">
+          <div>
+            <h4>《主角的背包里装了什么》道具与美术经验分享</h4>
+            <p>经验分享 · 木子车间 · 播放 16.4 万</p>
+          </div>
+          <span class="v96-mini-play" aria-hidden="true">▶</span>
+        </article>
+        <article class="v96-mini-item">
+          <div>
+            <h4>《深夜放映室的观众》一次观影社群的现场访谈</h4>
+            <p>人物访谈 · 灯下白 · 播放 12.8 万</p>
+          </div>
+          <span class="v96-mini-play" aria-hidden="true">▶</span>
+        </article>
+        <article class="v96-mini-item">
+          <div>
+            <h4>《独立短片的声音设计入门》教程干货合集</h4>
+            <p>教程干货 · 声场笔记 · 播放 9.7 万</p>
+          </div>
+          <span class="v96-mini-play" aria-hidden="true">▶</span>
+        </article>
+        <article class="v96-mini-item">
+          <div>
+            <h4>《盲评五款监听耳机》一次不说话的测评</h4>
+            <p>深度测评 · 老周评测室 · 播放 8.5 万</p>
+          </div>
+          <span class="v96-mini-play" aria-hidden="true">▶</span>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 视频社区流 ============ -->
+<section class="v96-section" id="v96Videos">
+  <div class="v96-wrap">
+    <div class="v96-sec-head">
+      <span class="v96-eyebrow">Community · 视频社区</span>
+      <h2 class="v96-h2">社区热门：<em>正在被讨论的精品视频</em></h2>
+      <p class="v96-lead">96xx宅男福利社社区每日更新，以下为本周热度较高、口碑稳定的视频内容。点赞与收藏数据实时变化，欢迎参与互动。</p>
+    </div>
+    <div class="v96-video-grid" id="v96VideoGrid">
+
+      <article class="v96-video-card">
+        <div class="v96-video-cover">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231b2a46'/%3E%3Cstop offset='1' stop-color='%232f6bb5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v1)'/%3E%3Crect x='70' y='80' width='220' height='150' rx='10' fill='%23ffffff' opacity='.09'/%3E%3Crect x='92' y='104' width='120' height='9' rx='4' fill='%237ff3e9' opacity='.9'/%3E%3Crect x='92' y='128' width='176' height='7' rx='3' fill='%23ffffff' opacity='.36'/%3E%3Crect x='92' y='150' width='150' height='7' rx='3' fill='%23ffffff' opacity='.36'/%3E%3Ccircle cx='450' cy='180' r='80' fill='none' stroke='%23ff5d73' stroke-width='5' opacity='.85'/%3E%3Cpolygon points='430,145 490,180 430,215' fill='%23ff5d73'/%3E%3Crect x='330' y='300' width='230' height='9' rx='4' fill='%23ffffff' opacity='.3'/%3E%3C/svg%3E"
+            alt="视频封面：城市夜景中手持设备拍摄的创作者与播放按钮元素" width="640" height="360">
+          <span class="v96-video-label">社区热榜</span>
+          <span class="v96-video-dur">18:42</span>
+        </div>
+        <div class="v96-video-body">
+          <h3>《夜航放映室》第三季：把一座城市的夜晚剪成一部短片</h3>
+          <p>城市探索系列的收官之作，记录从天桥到码头的八个小时，附带机位分布图与夜景降噪思路，是 96xx宅男福利社本季口碑最高的原创影像。</p>
+          <div>
+            <span class="v96-tag">城市探索</span><span class="v96-tag">原创</span>
+          </div>
+          <div class="v96-video-meta" style="margin-top:10px">
+            <span class="v96-author-chip"><span class="v96-ava" style="background:#2456a6">阿</span>阿澈</span>
+            <span>播放 32.4 万</span>
+            <span class="v96-like-count" data-base="18200">点赞 1.8 万</span>
+            <span class="v96-save-count" data-base="9200">收藏 9,200</span>
+          </div>
+          <div class="v96-video-foot">
+            <button class="v96-act v96-like-btn" type="button" aria-pressed="false">♡ 点赞</button>
+            <button class="v96-act v96-save-btn" type="button" aria-pressed="false">☆ 收藏</button>
+            <button class="v96-act v96-copy-btn" type="button">⧉ 复制链接</button>
+            <button class="v96-act v96-comment-btn" type="button">✎ 展开评论</button>
+          </div>
+          <div class="v96-comment-panel v96-hidden" style="margin-top:12px;font-size:13px;color:#4a5c76;background:#f6f9fe;border-radius:10px;padding:12px 14px">
+            精选评论：剪辑节奏很稳，夜景部分的高光控制尤其舒服，已经二刷。
+          </div>
+        </div>
+      </article>
+
+      <article class="v96-video-card">
+        <div class="v96-video-cover">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%230f3d3a'/%3E%3Cstop offset='1' stop-color='%2300b8ad'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='%23eef7f6'/%3E%3Crect y='180' width='640' height='180' fill='url(%23v2)' opacity='.9'/%3E%3Cg stroke='%230f3d3a' stroke-width='3' opacity='.55' fill='none'%3E%3Crect x='120' y='110' width='180' height='120' rx='8'/%3E%3Crect x='330' y='70' width='190' height='160' rx='10'/%3E%3C/g%3E%3Ccircle cx='210' cy='170' r='26' fill='%23ff5d73' opacity='.85'/%3E%3Crect x='150' y='255' width='340' height='12' rx='6' fill='%23ffffff' opacity='.7'/%3E%3Crect x='150' y='283' width='220' height='9' rx='4' fill='%23ffffff' opacity='.45'/%3E%3C/svg%3E"
+            alt="视频封面：桌面上的监听耳机与声波图形，独立短片声音设计教学场景" width="640" height="360">
+          <span class="v96-video-dur">24:06</span>
+        </div>
+        <div class="v96-video-body">
+          <h3>独立短片的声音设计：从环境底噪到情绪推进的四步法</h3>
+          <p>教程干货向的长视频，把声音设计拆成采样、铺底、留白、爆发四个阶段，并给出可直接套用的工程结构与常见错误对照表。</p>
+          <div>
+            <span class="v96-tag">教程干货</span><span class="v96-tag">创作幕后</span>
+          </div>
+          <div class="v96-video-meta" style="margin-top:10px">
+            <span class="v96-author-chip"><span class="v96-ava" style="background:#008a82">声</span>声场笔记</span>
+            <span>播放 19.8 万</span>
+            <span class="v96-like-count" data-base="12600">点赞 1.2 万</span>
+            <span class="v96-save-count" data-base="7400">收藏 7,400</span>
+          </div>
+          <div class="v96-video-foot">
+            <button class="v96-act v96-like-btn" type="button" aria-pressed="false">♡ 点赞</button>
+            <button class="v96-act v96-save-btn" type="button" aria-pressed="false">☆ 收藏</button>
+            <button class="v96-act v96-copy-btn" type="button">⧉ 复制链接</button>
+            <button class="v96-act v96-comment-btn" type="button">✎ 展开评论</button>
+          </div>
+          <div class="v96-comment-panel v96-hidden" style="margin-top:12px;font-size:13px;color:#4a5c76;background:#f2fbfa;border-radius:10px;padding:12px 14px">
+            精选评论：把留白单独拿出来讲很实用，很多教程都跳过这一段。
+          </div>
+        </div>
+      </article>
+
+      <article class="v96-video-card">
+        <div class="v96-video-cover">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%2317192b'/%3E%3Cg%3E%3Ccircle cx='160' cy='180' r='86' fill='%232456a6' opacity='.5'/%3E%3Ccircle cx='300' cy='140' r='52' fill='%2300b8ad' opacity='.55'/%3E%3Ccircle cx='430' cy='220' r='70' fill='%23ff5d73' opacity='.35'/%3E%3C/g%3E%3Crect x='60' y='288' width='240' height='10' rx='5' fill='%23ffffff' opacity='.45'/%3E%3Crect x='60' y='312' width='160' height='8' rx='4' fill='%23ffffff' opacity='.25'/%3E%3Crect x='470' y='96' width='110' height='30' rx='15' fill='%237ff3e9'/%3E%3C/svg%3E"
+            alt="视频封面：多色抽象光斑构成的人物访谈对谈画面" width="640" height="360">
+          <span class="v96-video-label">编辑推荐</span>
+          <span class="v96-video-dur">31:15</span>
+        </div>
+        <div class="v96-video-body">
+          <h3>人物访谈：在小众题材里坚持七年，我们靠什么活下来</h3>
+          <p>与两位长期深耕兴趣内容的老创作者对谈，聊选题判断、观众变化与商业边界，也聊 96xx宅男福利社社区如何陪他们度过低谷期。</p>
+          <div>
+            <span class="v96-tag">人物访谈</span><span class="v96-tag">品牌故事</span>
+          </div>
+          <div class="v96-video-meta" style="margin-top:10px">
+            <span class="v96-author-chip"><span class="v96-ava" style="background:#8a4b9c">灯</span>灯下白</span>
+            <span>播放 15.2 万</span>
+            <span class="v96-like-count" data-base="9800">点赞 9,800</span>
+            <span class="v96-save-count" data-base="5100">收藏 5,100</span>
+          </div>
+          <div class="v96-video-foot">
+            <button class="v96-act v96-like-btn" type="button" aria-pressed="false">♡ 点赞</button>
+            <button class="v96-act v96-save-btn" type="button" aria-pressed="false">☆ 收藏</button>
+            <button class="v96-act v96-copy-btn" type="button">⧉ 复制链接</button>
+            <button class="v96-act v96-comment-btn" type="button">✎ 展开评论</button>
+          </div>
+          <div class="v96-comment-panel v96-hidden" style="margin-top:12px;font-size:13px;color:#4a5c76;background:#f8f5fb;border-radius:10px;padding:12px 14px">
+            精选评论：访谈里那句「观众先于流量」说得很实在，值得收藏。
+          </div>
+        </div>
+      </article>
+
+      <article class="v96-video-card">
+        <div class="v96-video-cover">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f5f7fb'/%3E%3Cg stroke='%232456a6' stroke-width='3' fill='none' opacity='.8'%3E%3Cpath d='M80 270 L180 190 L280 236 L380 140 L520 200'/%3E%3C/g%3E%3Ccircle cx='180' cy='190' r='7' fill='%2300b8ad'/%3E%3Ccircle cx='380' cy='140' r='7' fill='%23ff5d73'/%3E%3Crect x='80' y='70' width='200' height='12' rx='6' fill='%2316233f' opacity='.8'/%3E%3Crect x='80' y='96' width='140' height='8' rx='4' fill='%235d6d84' opacity='.5'/%3E%3Crect x='430' y='250' width='140' height='40' rx='10' fill='%232456a6' opacity='.14'/%3E%3C/svg%3E"
+            alt="视频封面：测评数据折线图与耳机产品示意，监听耳机盲评场景" width="640" height="360">
+          <span class="v96-video-dur">22:38</span>
+        </div>
+        <div class="v96-video-body">
+          <h3>盲评五款监听耳机：不谈参数，只谈你是否听得出来</h3>
+          <p>去掉价格标签后的真实听感对比，邀请五位不同背景的听众盲测，用对照表呈现差异，避免玄学，保留可复现的判断依据。</p>
+          <div>
+            <span class="v96-tag">深度测评</span><span class="v96-tag">科技前沿</span>
+          </div>
+          <div class="v96-video-meta" style="margin-top:10px">
+            <span class="v96-author-chip"><span class="v96-ava" style="background:#c2691b">周</span>老周评测室</span>
+            <span>播放 27.3 万</span>
+            <span class="v96-like-count" data-base="15400">点赞 1.5 万</span>
+            <span class="v96-save-count" data-base="11200">收藏 1.1 万</span>
+          </div>
+          <div class="v96-video-foot">
+            <button class="v96-act v96-like-btn" type="button" aria-pressed="false">♡ 点赞</button>
+            <button class="v96-act v96-save-btn" type="button" aria-pressed="false">☆ 收藏</button>
+            <button class="v96-act v96-copy-btn" type="button">⧉ 复制链接</button>
+            <button class="v96-act v96-comment-btn" type="button">✎ 展开评论</button>
+          </div>
+          <div class="v96-comment-panel v96-hidden" style="margin-top:12px;font-size:13px;color:#4a5c76;background:#fdf6ef;border-radius:10px;padding:12px 14px">
+            精选评论：盲测形式很诚实，建议把测试音轨也放在简介里方便复现。
+          </div>
+        </div>
+      </article>
+
+      <article class="v96-video-card">
+        <div class="v96-video-cover">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23143b33'/%3E%3Cg opacity='.85'%3E%3Cpath d='M0 300 Q160 220 320 280 T640 260 L640 360 L0 360 Z' fill='%232a7a63'/%3E%3Cpath d='M0 330 Q180 260 360 310 T640 300 L640 360 L0 360 Z' fill='%2300b8ad' opacity='.45'/%3E%3C/g%3E%3Ccircle cx='500' cy='110' r='52' fill='%23ffe6a1' opacity='.85'/%3E%3Crect x='70' y='90' width='180' height='10' rx='5' fill='%23ffffff' opacity='.6'/%3E%3Crect x='70' y='116' width='120' height='8' rx='4' fill='%23ffffff' opacity='.34'/%3E%3C/svg%3E"
+            alt="视频封面：山野日落下的露营帐篷与远景地平线，户外影像记录画面" width="640" height="360">
+          <span class="v96-video-dur">16:04</span>
+        </div>
+        <div class="v96-video-body">
+          <h3>户外拍摄攻略：一次轻量化露营影像记录的全流程</h3>
+          <p>从装备清单、日出机位到电量管理，给出一份可执行的户外拍摄流程表，适合想在周末做一次完整记录的新手创作者。</p>
+          <div>
+            <span class="v96-tag">户外活动</span><span class="v96-tag">实用技巧</span>
+          </div>
+          <div class="v96-video-meta" style="margin-top:10px">
+            <span class="v96-author-chip"><span class="v96-ava" style="background:#2a7a63">木</span>木子车间</span>
+            <span>播放 11.9 万</span>
+            <span class="v96-like-count" data-base="7600">点赞 7,600</span>
+            <span class="v96-save-count" data-base="6300">收藏 6,300</span>
+          </div>
+          <div class="v96-video-foot">
+            <button class="v96-act v96-like-btn" type="button" aria-pressed="false">♡ 点赞</button>
+            <button class="v96-act v96-save-btn" type="button" aria-pressed="false">☆ 收藏</button>
+            <button class="v96-act v96-copy-btn" type="button">⧉ 复制链接</button>
+            <button class="v96-act v96-comment-btn" type="button">✎ 展开评论</button>
+          </div>
+          <div class="v96-comment-panel v96-hidden" style="margin-top:12px;font-size:13px;color:#4a5c76;background:#f2faf6;border-radius:10px;padding:12px 14px">
+            精选评论：清单表可以直接用，电量管理那段帮我避了不少坑。
+          </div>
+        </div>
+      </article>
+
+      <article class="v96-video-card">
+        <div class="v96-video-cover">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23fbf4f6'/%3E%3Cg%3E%3Crect x='90' y='90' width='150' height='180' rx='10' fill='%23ff5d73' opacity='.22'/%3E%3Crect x='260' y='130' width='150' height='140' rx='10' fill='%232456a6' opacity='.2'/%3E%3Crect x='430' y='70' width='120' height='200' rx='10' fill='%2300b8ad' opacity='.22'/%3E%3C/g%3E%3Crect x='90' y='300' width='300' height='11' rx='5' fill='%2316233f' opacity='.6'/%3E%3Crect x='90' y='324' width='180' height='8' rx='4' fill='%235d6d84' opacity='.4'/%3E%3C/svg%3E"
+            alt="视频封面：三张道具卡片与美术布景示意，创作经验分享场景" width="640" height="360">
+          <span class="v96-video-dur">13:47</span>
+        </div>
+        <div class="v96-video-body">
+          <h3>小成本道具课：如何用三百块搭出可信的场景</h3>
+          <p>经验分享向的实用内容，讲解材质选择、旧化处理与灯光配合三件事，附三组前后对照图，适合独立短片与短剧创作者。</p>
+          <div>
+            <span class="v96-tag">经验分享</span><span class="v96-tag">手作DIY</span>
+          </div>
+          <div class="v96-video-meta" style="margin-top:10px">
+            <span class="v96-author-chip"><span class="v96-ava" style="background:#a03a54">布</span>布景研究所</span>
+            <span>播放 9.4 万</span>
+            <span class="v96-like-count" data-base="6100">点赞 6,100</span>
+            <span class="v96-save-count" data-base="5800">收藏 5,800</span>
+          </div>
+          <div class="v96-video-foot">
+            <button class="v96-act v96-like-btn" type="button" aria-pressed="false">♡ 点赞</button>
+            <button class="v96-act v96-save-btn" type="button" aria-pressed="false">☆ 收藏</button>
+            <button class="v96-act v96-copy-btn" type="button">⧉ 复制链接</button>
+            <button class="v96-act v96-comment-btn" type="button">✎ 展开评论</button>
+          </div>
+          <div class="v96-comment-panel v96-hidden" style="margin-top:12px;font-size:13px;color:#4a5c76;background:#fbf4f6;border-radius:10px;padding:12px 14px">
+            精选评论：旧化处理讲得很细，三百块的预算真的能做到。
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 专题企划 ============ -->
+<section class="v96-section v96-section--tint" id="v96Topics">
+  <div class="v96-wrap">
+    <div class="v96-sec-head">
+      <span class="v96-eyebrow">Series · 专题企划</span>
+      <h2 class="v96-h2">正在更新的专题：<em>官网独家企划</em></h2>
+      <p class="v96-lead">96xx宅男福利社的专题企划由官方编辑与签约创作者共同运营，围绕垂直领域持续产出，支持按集追更与收藏。</p>
+    </div>
+    <div class="v96-topic-grid">
+
+      <article class="v96-topic">
+        <div class="v96-topic-top">
+          <span class="v96-tag">创作幕后</span>
+          <span class="v96-topic-status">更新中 · 第 9 期</span>
+        </div>
+        <h3>幕后实验室：把创作过程完整摊开</h3>
+        <p>跟拍创作者的真实工作现场，从前期筹备到后期交付，不剪掉失败与重来，呈现原创内容的完整链路。</p>
+        <ul>
+          <li>《一台设备拍一整部短片》48 小时实拍全记录</li>
+          <li>《调色不是滤镜》五组场景的色彩对照实验</li>
+          <li>《剪辑台上的取舍》被删掉的三个关键镜头</li>
+        </ul>
+      </article>
+
+      <article class="v96-topic">
+        <div class="v96-topic-top">
+          <span class="v96-tag">城市探索</span>
+          <span class="v96-topic-status">更新中 · 第 6 期</span>
+        </div>
+        <h3>夜航放映室：城市夜晚影像计划</h3>
+        <p>以夜晚为线索的城市影像企划，每集聚焦一条街道或一片街区，用镜头记录城市在深夜里的另一种秩序。</p>
+        <ul>
+          <li>《天桥与码头》八小时夜间行走记录</li>
+          <li>《便利店的灯》深夜营业场景观察</li>
+          <li>《末班地铁》通勤者的十分钟群像</li>
+        </ul>
+      </article>
+
+      <article class="v96-topic">
+        <div class="v96-topic-top">
+          <span class="v96-tag">深度测评</span>
+          <span class="v96-topic-status is-done">已完结 · 共 12 期</span>
+        </div>
+        <h3>听得见的选择：音频设备盲测计划</h3>
+        <p>去掉价格与品牌标签，邀请不同背景的听众参与盲测，用可复现的方法给出真实听感结论，拒绝玄学。</p>
+        <ul>
+          <li>《盲评五款监听耳机》不谈参数的听感对比</li>
+          <li>《录音笔还是手机》三种环境下的收音对照</li>
+          <li>《入门声卡怎么选》预算区间与用途匹配表</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 品牌解析（800字以上） ============ -->
+<section class="v96-section" id="v96About">
+  <div class="v96-wrap">
+    <div class="v96-sec-head">
+      <span class="v96-eyebrow">Brand · 品牌解析</span>
+      <h2 class="v96-h2">关于 96xx宅男福利社：<em>一个兴趣视频社区的成长方式</em></h2>
+      <p class="v96-lead">从内容定位到社区运营，以下从三个角度说明我们如何理解“96xx宅男福利社”这四个字背后的责任与长期主义。</p>
+    </div>
+    <div class="v96-explain">
+      <div class="v96-explain-body">
+        <h3 class="v96-h3">一、我们为什么把“兴趣”作为内容主轴</h3>
+        <p>96xx宅男福利社自创立起便确定了一个朴素的判断：真正能让人反复观看的视频，往往不是最热闹的那批，而是与个人兴趣紧密相关的那批。影视、动漫、游戏、数码、户外影像这些垂直领域，看起来受众不宽，但用户粘性高、讨论深度足、创作门槛也足够清晰。我们围绕这些方向搭建内容生态，用编辑推荐与创作者自荐并行的方式筛选内容，确保首页出现的每一条视频都经过人工确认，而不是单纯由播放量决定。</p>
+        <p>在具体操作上，官网首页的焦点位每周由内容委员会评审一次，评审维度包括原创度、信息密度、可复现性与社区反馈四项。被选入焦点位的内容，会获得更长的首页展示周期与更明确的分类标签，比如“创作幕后”“深度测评”“城市探索”。这种机制让新人创作者也有机会被看到——只要内容本身扎实，粉丝量并不是唯一门槛。这也是我们一直强调“用户首选”的原因：用户的选择被真实地纳入推荐逻辑，而不是被算法平均值吞没。</p>
+        <h3 class="v96-h3">二、原创与正版如何被落实到日常运营</h3>
+        <p>作为一个持续运营的视频品牌官网，96xx宅男福利社在版权与原创上有明确的底线。所有上架视频须由创作者本人上传并完成授权确认，转载与二次剪辑须提供来源说明；涉及影视片段引用的内容，社区规范要求控制在评论与解析的必要范围内，并在简介中注明出处。平台同时提供原创声明入口，创作者可对脚本、分镜、调色工程等创作过程材料进行留存备案，形成可追溯的原创链路。</p>
+        <p>高清是另一条基础标准。我们在播放端提供从 720P 到 1080P 的清晰度选择，并对上传素材给出编码与码率建议，减少因二次压缩造成的画质损失。对教程类、测评类这些“细节即信息”的内容，我们额外建议创作者保留原始素材备份，便于后期补充细节镜头。这些看起来琐碎的规范，实际构成了社区品质口碑的地基：当用户知道点开一个视频大概率不会浪费时间，社区的信任感才会累积。</p>
+        <h3 class="v96-h3">三、社区、创作者与企业的三方关系</h3>
+        <p>96xx宅男福利社不把自己定义为单纯的分发渠道。企业一侧负责基础设施、规范与激励计划，创作者一侧负责持续产出，用户一侧负责反馈与共建，三者形成循环。我们设立了创作者成长体系，按作品数量、完播率、社区互动与内容合规四个维度综合评定，达标者可获得流量扶持、设备借用与专题合作机会。每季度一次的社区创作挑战，围绕具体题材征集作品，评审团由编辑、资深创作者与用户代表共同组成，结果在官网公示。</p>
+        <p>同时，我们也承担相应的社会责任：对未成年用户提供使用提示，对评论区的攻击性言论进行管理，对涉及隐私与肖像的内容要求完整授权。品牌故事不是一句口号，而是这些日常动作的总和。96xx宅男福利社希望成为创作者愿意长期停留、用户愿意长期信任的地方——它不追求短期爆量，而追求在垂直领域里，把每一件小事做扎实，让内容生态真正具备持续生长的能力。</p>
+      </div>
+      <aside class="v96-explain-side">
+        <div class="v96-stat-card">
+          <div><b>12.6万</b><span>原创视频</span></div>
+          <div><b>1,840</b><span>签约创作者</span></div>
+          <div><b>98.2%</b><span>内容合规率</span></div>
+        </div>
+        <div class="v96-pull">
+          <b>品牌主张：</b>让兴趣被认真对待。96xx宅男福利社坚持原创、正版与高清三条底线，用可追溯的创作材料与透明的推荐机制，陪伴每一位认真做内容的人。
+        </div>
+        <div class="v96-pull" style="border-left-color:#00b8ad;background:#f0fbfa;color:#0c4a46">
+          <b>社区承诺：</b>焦点位每周人工评审，评论区每日巡查，投稿 48 小时内给出反馈。我们相信真实的反馈比漂亮的数字更重要。
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 创作者矩阵 ============ -->
+<section class="v96-section v96-section--tint" id="v96Creators">
+  <div class="v96-wrap">
+    <div class="v96-sec-head">
+      <span class="v96-eyebrow">Creators · 创作者矩阵</span>
+      <h2 class="v96-h2">96xx宅男福利社的<em>签约创作者</em></h2>
+      <p class="v96-lead">他们来自不同背景，却在同一件事上保持一致：对内容品质的坚持。以下为部分创作者档案，点击头像可查看简介弹窗。</p>
+    </div>
+    <div class="v96-author-grid">
+
+      <article class="v96-author-card">
+        <button class="v96-ava" style="background:#2456a6" type="button" data-author="阿澈" data-field="城市探索 / 夜景影像" data-works="86" data-fans="12.4 万" data-bio="独立影像创作者，专注城市夜景与街头记录，擅长用自然光完成叙事。代表作「夜航放映室」系列连续三季更新，强调真实取景与克制的运镜，常把机位与参数完整写进简介，方便同行复现。">阿</button>
+        <h3>阿澈</h3>
+        <p class="v96-author-field">城市探索 / 夜景影像</p>
+        <p>独立影像创作者，专注城市夜景与街头记录，擅长用自然光完成叙事，代表作「夜航放映室」系列已连续更新三季。</p>
+        <div class="v96-author-nums">
+          <div><b>86</b>作品</div><div><b>12.4万</b>粉丝</div>
+        </div>
+        <button class="v96-act" type="button" data-author="阿澈" data-field="城市探索 / 夜景影像" data-works="86" data-fans="12.4 万" data-bio="独立影像创作者，专注城市夜景与街头记录，擅长用自然光完成叙事。代表作「夜航放映室」系列连续三季更新，强调真实取景与克制的运镜，常把机位与参数完整写进简介，方便同行复现。">查看简介</button>
+      </article>
+
+      <article class="v96-author-card">
+        <button class="v96-ava" style="background:#008a82" type="button" data-author="声场笔记" data-field="声音设计 / 音频测评" data-works="64" data-fans="8.7 万" data-bio="声音设计方向的长期创作者，做过现场录音、短片混音与音频设备测评。内容以方法论见长，喜欢把抽象听感拆成可执行的步骤，并在视频里提供工程结构与错误对照表。曾参与多个独立短片的后期声音制作。">声</button>
+        <h3>声场笔记</h3>
+        <p class="v96-author-field">声音设计 / 音频测评</p>
+        <p>声音设计方向的长期创作者，内容以方法论见长，喜欢把抽象听感拆成可执行的步骤，并提供工程结构参考。</p>
+        <div class="v96-author-nums">
+          <div><b>64</b>作品</div><div><b>8.7万</b>粉丝</div>
+        </div>
+        <button class="v96-act" type="button" data-author="声场笔记" data-field="声音设计 / 音频测评" data-works="64" data-fans="8.7 万" data-bio="声音设计方向的长期创作者，做过现场录音、短片混音与音频设备测评。内容以方法论见长，喜欢把抽象听感拆成可执行的步骤，并在视频里提供工程结构与错误对照表。曾参与多个独立短片的后期声音制作。">查看简介</button>
+      </article>
+
+      <article class="v96-author-card">
+        <button class="v96-ava" style="background:#c2691b" type="button" data-author="老周评测室" data-field="数码测评 / 音频硬件" data-works="112" data-fans="16.2 万" data-bio="以盲测与对照实验见长的数码测评创作者，坚持去掉价格标签做听感判断，所有结论都会附上测试条件与复现方式。视频节奏偏冷静，但评论区讨论热度很高，被用户称为「不吹不黑的老周」。">周</button>
+        <h3>老周评测室</h3>
+        <p class="v96-author-field">数码测评 / 音频硬件</p>
+        <p>以盲测与对照实验见长的数码测评创作者，坚持去掉价格标签做听感判断，所有结论都会附上测试条件与复现方式。</p>
+        <div class="v96-author-nums">
+          <div><b>112</b>作品</div><div><b>16.2万</b>粉丝</div>
+        </div>
+        <button class="v96-act" type="button" data-author="老周评测室" data-field="数码测评 / 音频硬件" data-works="112" data-fans="16.2 万" data-bio="以盲测与对照实验见长的数码测评创作者，坚持去掉价格标签做听感判断，所有结论都会附上测试条件与复现方式。视频节奏偏冷静，但评论区讨论热度很高，被用户称为「不吹不黑的老周」。">查看简介</button>
+      </article>
+
+      <article class="v96-author-card">
+        <button class="v96-ava" style="background:#a03a54" type="button" data-author="布景研究所" data-field="美术布景 / 手作道具" data-works="73" data-fans="9.3 万" data-bio="专注小成本美术布景与手作道具的创作者，擅长用有限预算搭出可信场景，内容覆盖材质选择、旧化处理与灯光配合。视频里常给出前后对照与材料清单，帮助独立创作者把想法真正落地。">布</button>
+        <h3>布景研究所</h3>
+        <p class="v96-author-field">美术布景 / 手作道具</p>
+        <p>专注小成本美术布景与手作道具，擅长用有限预算搭出可信场景，视频里常给出材料清单与前后对照。</p>
+        <div class="v96-author-nums">
+          <div><b>73</b>作品</div><div><b>9.3万</b>粉丝</div>
+        </div>
+        <button class="v96-act" type="button" data-author="布景研究所" data-field="美术布景 / 手作道具" data-works="73" data-fans="9.3 万" data-bio="专注小成本美术布景与手作道具的创作者，擅长用有限预算搭出可信场景，内容覆盖材质选择、旧化处理与灯光配合。视频里常给出前后对照与材料清单，帮助独立创作者把想法真正落地。">查看简介</button>
+      </article>
+
+      <article class="v96-author-card">
+        <button class="v96-ava" style="background:#8a4b9c" type="button" data-author="灯下白" data-field="人物访谈 / 文化观察" data-works="58" data-fans="7.1 万" data-bio="以人物访谈与文化观察为主的创作者，提问克制、剪辑干净，擅长在长对话里保留沉默与停顿。关注小众题材创作者的生存状态，访谈内容常被用户称为「看完想认真做点东西」。">灯</button>
+        <h3>灯下白</h3>
+        <p class="v96-author-field">人物访谈 / 文化观察</p>
+        <p>以人物访谈与文化观察为主的创作者，提问克制、剪辑干净，擅长在长对话里保留沉默与停顿，关注小众题材创作者。</p>
+        <div class="v96-author-nums">
+          <div><b>58</b>作品</div><div><b>7.1万</b>粉丝</div>
+        </div>
+        <button class="v96-act" type="button" data-author="灯下白" data-field="人物访谈 / 文化观察" data-works="58" data-fans="7.1 万" data-bio="以人物访谈与文化观察为主的创作者，提问克制、剪辑干净，擅长在长对话里保留沉默与停顿。关注小众题材创作者的生存状态，访谈内容常被用户称为「看完想认真做点东西」。">查看简介</button>
+      </article>
+
+      <article class="v96-author-card">
+        <button class="v96-ava" style="background:#2a7a63" type="button" data-author="木子车间" data-field="户外活动 / 器材实践" data-works="91" data-fans="10.6 万" data-bio="户外影像与器材实践方向的创作者，习惯把一次出行拆成可执行的清单与流程，内容实用、少空话。常年在山野与城市之间切换拍摄，视频里很少摆拍，更愿意展示真实的准备过程与突发状况。">木</button>
+        <h3>木子车间</h3>
+        <p class="v96-author-field">户外活动 / 器材实践</p>
+        <p>户外影像与器材实践方向的创作者，习惯把一次出行拆成可执行的清单与流程，内容实用、少空话。</p>
+        <div class="v96-author-nums">
+          <div><b>91</b>作品</div><div><b>10.6万</b>粉丝</div>
+        </div>
+        <button class="v96-act" type="button" data-author="木子车间" data-field="户外活动 / 器材实践" data-works="91" data-fans="10.6 万" data-bio="户外影像与器材实践方向的创作者，习惯把一次出行拆成可执行的清单与流程，内容实用、少空话。常年在山野与城市之间切换拍摄，视频里很少摆拍，更愿意展示真实的准备过程与突发状况。">查看简介</button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 榜单 + 用户评价 ============ -->
+<section class="v96-section" id="v96Rank">
+  <div class="v96-wrap">
+    <div class="v96-sec-head">
+      <span class="v96-eyebrow">Rank & Review · 口碑</span>
+      <h2 class="v96-h2">本周口碑榜与<em>真实用户评价</em></h2>
+      <p class="v96-lead">榜单按内容完播率、互动质量与编辑评分加权计算，评价来自 96xx宅男福利社社区用户的真实留言节选。</p>
+    </div>
+    <div class="v96-rank-review">
+      <div class="v96-rank-card">
+        <div class="v96-rank-head">
+          <b>本周热度榜 TOP 8</b>
+          <span>每日 0 点更新</span>
+        </div>
+        <div class="v96-rank-list">
+          <div class="v96-rank-item"><span class="v96-rank-no">1</span><span>夜航放映室 S3：把城市夜晚剪成短片</span><em>32.4万</em></div>
+          <div class="v96-rank-item"><span class="v96-rank-no">2</span><span>盲评五款监听耳机</span><em>27.3万</em></div>
+          <div class="v96-rank-item"><span class="v96-rank-no">3</span><span>一台设备拍一整部短片</span><em>24.8万</em></div>
+          <div class="v96-rank-item"><span class="v96-rank-no">4</span><span>声音设计四步法</span><em>19.8万</em></div>
+          <div class="v96-rank-item"><span class="v96-rank-no">5</span><span>人物访谈：在小众题材里坚持七年</span><em>15.2万</em></div>
+          <div class="v96-rank-item"><span class="v96-rank-no">6</span><span>轻量化露营影像记录全流程</span><em>11.9万</em></div>
+          <div class="v96-rank-item"><span class="v96-rank-no">7</span><span>三百块搭出可信场景</span><em>9.4万</em></div>
+          <div class="v96-rank-item"><span class="v96-rank-no">8</span><span>通勤路上的十种光影</span><em>8.6万</em></div>
+        </div>
+      </div>
+      <div class="v96-review-grid">
+        <article class="v96-review">
+          <div class="v96-review-top">
+            <span class="v96-ava" style="background:#2456a6">路</span>
+            <span class="v96-review-name">路灯下的猫</span>
+            <span class="v96-stars">★★★★★</span>
+          </div>
+          <p>从第一季追到第三季，最打动我的是那种不急着解释的镜头。96xx宅男福利社的焦点位推荐确实有眼光。</p>
+          <small>评价视频：夜航放映室 S3</small>
+        </article>
+        <article class="v96-review">
+          <div class="v96-review-top">
+            <span class="v96-ava" style="background:#008a82">小</span>
+            <span class="v96-review-name">小满</span>
+            <span class="v96-stars">★★★★☆</span>
+          </div>
+          <p>声音设计那期看了两遍，工程结构讲得清楚。唯一小建议是希望把测试音轨打包放在简介里，方便直接试。</p>
+          <small>评价视频：声音设计四步法</small>
+        </article>
+        <article class="v96-review">
+          <div class="v96-review-top">
+            <span class="v96-ava" style="background:#c2691b">老</span>
+            <span class="v96-review-name">老王不姓王</span>
+            <span class="v96-stars">★★★★★</span>
+          </div>
+          <p>盲测形式很诚实，至少让我意识到自己听不出那么细的差别。这种不吹不黑的测评在社区里太少了。</p>
+          <small>评价视频：盲评五款监听耳机</small>
+        </article>
+        <article class="v96-review">
+          <div class="v96-review-top">
+            <span class="v96-ava" style="background:#a03a54">阿</span>
+            <span class="v96-review-name">阿布的小屋</span>
+            <span class="v96-stars">★★★★★</span>
+          </div>
+          <p>按照布景那期的材料清单真的做出来了，成本比想象中低。平台的教程类内容质量在同类里算很稳的。</p>
+          <small>评价视频：三百块搭出可信场景</small>
+        </article>
+        <article class="v96-review">
+          <div class="v96-review-top">
+            <span class="v96-ava" style="background:#2a7a63">山</span>
+            <span class="v96-review-name">山风过境</span>
+            <span class="v96-stars">★★★★☆</span>
+          </div>
+          <p>户外流程表很实用，唯一想补充的是希望能提一下低温环境下的电池保暖问题，我这次就吃了亏。</p>
+          <small>评价视频：轻量化露营影像记录</small>
+        </article>
+        <article class="v96-review">
+          <div class="v96-review-top">
+            <span class="v96-ava" style="background:#8a4b9c">深</span>
+            <span class="v96-review-name">深夜放映员</span>
+            <span class="v96-stars">★★★★★</span>
+          </div>
+          <p>访谈里那句「观众先于流量」说得很实在。作为老用户，能明显感觉到这个官网在认真做内容，而不是只想做流量。</p>
+          <small>评价视频：人物访谈第三期</small>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 企业动态 / 合作 / FAQ ============ -->
+<section class="v96-section v96-section--tint" id="v96News">
+  <div class="v96-wrap">
+    <div class="v96-sec-head">
+      <span class="v96-eyebrow">News & Help · 动态与帮助</span>
+      <h2 class="v96-h2">企业动态、合作与<em>常见问题</em></h2>
+      <p class="v96-lead">96xx宅男福利社的官方发布、合作信息与用户常见问题集中在此，内容随运营节奏持续更新。</p>
+    </div>
+    <div class="v96-three">
+      <div>
+        <h3 class="v96-h3" style="margin-bottom:16px">企业动态 · 官方发布</h3>
+        <div class="v96-timeline">
+          <div class="v96-timeline-item">
+            <div class="v96-timeline-date">11-22</div>
+            <div class="v96-timeline-body">
+              <h3>创作者激励计划第二期开放报名</h3>
+              <p>面向站内原创作者，提供流量扶持、设备借用与专题合作名额，报名截止 12 月 10 日。</p>
+            </div>
+          </div>
+          <div class="v96-timeline-item">
+            <div class="v96-timeline-date">11-18</div>
+            <div class="v96-timeline-body">
+              <h3>社区口碑榜新增「数码测评」垂直分区</h3>
+              <p>榜单权重中加入复现性评分，鼓励创作者公开测试条件与素材来源。</p>
+            </div>
+          </div>
+          <div class="v96-timeline-item">
+            <div class="v96-timeline-date">11-12</div>
+            <div class="v96-timeline-body">
+              <h3>播放端清晰度策略升级</h3>
+              <p>默认自适应清晰度优化，1080P 高清播放的加载时间平均缩短 22%，弱网体验同步改善。</p>
+            </div>
+          </div>
+          <div class="v96-timeline-item">
+            <div class="v96-timeline-date">11-05</div>
+            <div class="v96-timeline-body">
+              <h3>「夜航放映室」第三季正式开播</h3>
+              <p>官方独家企划，每两周一集，支持追更提醒与收藏合集。</p>
+            </div>
+          </div>
+        </div>
+        <h3 class="v96-h3" style="margin:26px 0 14px">合作品牌 · 伙伴</h3>
+        <div class="v96-partner-grid">
+          <div class="v96-partner"><span class="v96-partner-mark" style="background:#2456a6">帧</span><div><b>帧光器材</b><span>影像设备支持</span></div></div>
+          <div class="v96-partner"><span class="v96-partner-mark" style="background:#008a82">声</span><div><b>声场实验室</b><span>音频技术合作</span></div></div>
+          <div class="v96-partner"><span class="v96-partner-mark" style="background:#c2691b">影</span><div><b>影格联合</b><span>内容联合出品</span></div></div>
+          <div class="v96-partner"><span class="v96-partner-mark" style="background:#8a4b9c">青</span><div><b>青年影像基金</b><span>新人创作扶持</span></div></div>
+        </div>
+      </div>
+      <div id="v96Faq">
+        <h3 class="v96-h3" style="margin-bottom:16px">常见问题 · FAQ</h3>
+        <div class="v96-faq">
+          <details>
+            <summary>如何向 96xx宅男福利社投稿？</summary>
+            <p>点击页头的「投稿入口」填写作品信息与授权说明，提交后 48 小时内会收到审核反馈。教程类与幕后类内容建议附上可复现的材料清单。</p>
+          </details>
+          <details>
+            <summary>平台对原创与版权有怎样的要求？</summary>
+            <p>所有视频须由创作者本人上传并完成授权确认。引用影视片段须控制在评论与解析的必要范围内，并在简介中注明出处。违规内容将被下架并记录。</p>
+          </details>
+          <details>
+            <summary>视频清晰度最高支持到多少？</summary>
+            <p>当前提供 720P 与 1080P 两档高清选项，播放端会根据网络自适应。建议上传时保留原始素材备份，避免二次压缩损失细节。</p>
+          </details>
+          <details>
+            <summary>怎样才能进入首页焦点位？</summary>
+            <p>焦点位每周由内容委员会评审一次，维度包括原创度、信息密度、可复现性与社区反馈。粉丝量不是唯一门槛，新人优质内容同样有机会。</p>
+          </details>
+          <details>
+            <summary>创作者激励计划如何申请？</summary>
+            <p>在站内「创作者中心」提交申请，需满足近三个月有持续更新且无违规记录。通过后可获得流量扶持与专题合作机会。</p>
+          </details>
+          <details>
+            <summary>评论区的管理规则是什么？</summary>
+            <p>社区提倡真实、友善的讨论。涉及人身攻击、隐私泄露与商业广告的评论会被处理。用户可使用举报按钮反馈，我们每日巡查。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA 投稿 ============ -->
+<section class="v96-section" id="v96Join">
+  <div class="v96-wrap">
+    <div class="v96-cta">
+      <div>
+        <h2>把你的影像放进 96xx宅男福利社的社区</h2>
+        <p>无论是一次完整的短片、一期干货教程，还是一条真实的生活记录，只要内容扎实、授权清晰，都欢迎投稿。官方审核团队会在 48 小时内给出反馈，并有机会入选首页焦点位与专题企划。</p>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <button class="v96-btn-primary" type="button" id="v96CtaSubmit">立即投稿</button>
+        <button class="v96-btn-line" type="button" id="v96ShareBtn" style="border-color:rgba(255,255,255,.7);color:#fff">分享本页</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer class="v96-footer">
+  <div class="v96-wrap">
+    <div class="v96-footer-grid">
+      <div>
+        <div class="v96-logo">
+          <span class="v96-logo-mark">96</span>
+          <span>96xx宅男福利社<small>OFFICIAL VIDEO</small></span>
+        </div>
+        <p>96xx宅男福利社官方网站 · 版权所有 · 持续运营中。以原创、正版、高清为底线，为创作者与用户搭建值得信赖的兴趣视频社区。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#v96Focus">焦点内容</a></li>
+          <li><a href="#v96Videos">视频社区</a></li>
+          <li><a href="#v96Topics">专题企划</a></li>
+          <li><a href="#v96Creators">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>品牌与帮助</h4>
+        <ul>
+          <li><a href="#v96About">品牌解析</a></li>
+          <li><a href="#v96News">企业动态</a></li>
+          <li><a href="#v96Faq">常见问题</a></li>
+          <li><a href="#v96Join">投稿入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系与合规</h4>
+        <ul>
+          <li>合作邮箱：partner@96xx-official.example</li>
+          <li>内容举报：report@96xx-official.example</li>
+          <li>工作日 10:00–19:00 响应</li>
+          <li>社区规范与原创声明可查</li>
+        </ul>
+      </div>
+    </div>
+    <div class="v96-footer-bottom">
+      <span>© 2026 96xx宅男福利社 官方网站 · 版权所有</span>
+      <span>持续运营 · 用户至上 · 品质内容生态</span>
+    </div>
+  </div>
+</footer>
+
+<button class="v96-top" id="v96TopBtn" type="button" aria-label="回到顶部">↑</button>
+<div class="v96-toast" id="v96Toast" role="status" aria-live="polite"></div>
+
+<!-- 作者弹窗 -->
+<div class="v96-modal" id="v96AuthorModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="v96AuthorModalTitle">
+  <div class="v96-modal-box">
+    <button class="v96-modal-close" type="button" data-close="v96AuthorModal" aria-label="关闭">×</button>
+    <h3 id="v96AuthorModalTitle">创作者简介</h3>
+    <p id="v96AuthorModalField"></p>
+    <p id="v96AuthorModalBio"></p>
+    <div class="v96-meta" style="color:#5d6d84">
+      <span id="v96AuthorModalWorks"></span>
+      <span id="v96AuthorModalFans"></span>
+    </div>
+    <div class="v96-modal-actions">
+      <button class="v96-btn-primary" type="button" data-close="v96AuthorModal">关闭</button>
+    </div>
+  </div>
+</div>
+
+<!-- 投稿弹窗 -->
+<div class="v96-modal" id="v96SubmitModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="v96SubmitTitle">
+  <div class="v96-modal-box">
+    <button class="v96-modal-close" type="button" data-close="v96SubmitModal" aria-label="关闭">×</button>
+    <h3 id="v96SubmitTitle">向 96xx宅男福利社投稿</h3>
+    <p>请填写基本信息，提交后 48 小时内会收到审核反馈。请确保作品为本人原创并具备完整授权。</p>
+    <form id="v96SubmitForm">
+      <div class="v96-field">
+        <label for="v96SName">作品标题</label>
+        <input id="v96SName" name="title" type="text" placeholder="例如：夜航放映室 S3 第 6 集" required>
+      </div>
+      <div class="v96-field">
+        <label for="v96SCat">内容分类</label>
+        <select id="v96SCat" name="cat">
+          <option>城市探索</option>
+          <option>创作幕后</option>
+          <option>教程干货</option>
+          <option>深度测评</option>
+          <option>人物访谈</option>
+          <option>户外活动</option>
+        </select>
+      </div>
+      <div class="v96-field">
+        <label for="v96SContact">联系方式</label>
+        <input id="v96SContact" name="contact" type="text" placeholder="邮箱或站内昵称" required>
+      </div>
+      <div class="v96-field">
+        <label for="v96SDesc">内容简介</label>
+        <textarea id="v96SDesc" name="desc" rows="3" placeholder="简要说明内容亮点、时长与授权情况"></textarea>
+      </div>
+      <div class="v96-modal-actions">
+        <button class="v96-btn-primary" type="submit">提交投稿</button>
+        <button class="v96-btn-line" type="button" data-close="v96SubmitModal">取消</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 分享弹窗 -->
+<div class="v96-modal" id="v96ShareModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="v96ShareTitle">
+  <div class="v96-modal-box">
+    <button class="v96-modal-close" type="button" data-close="v96ShareModal" aria-label="关闭">×</button>
+    <h3 id="v96ShareTitle">分享 96xx宅男福利社</h3>
+    <p>选择分享方式，或复制本页链接发送给朋友。</p>
+    <div class="v96-modal-actions">
+      <button class="v96-btn-line" type="button" id="v96ShareWechat">微信</button>
+      <button class="v96-btn-line" type="button" id="v96ShareWeibo">微博</button>
+      <button class="v96-btn-line" type="button" id="v96ShareQQ">QQ</button>
+      <button class="v96-btn-primary" type="button" id="v96ShareCopy">复制链接</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('v96Toast');
+  var toastTimer = null;
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    if(toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove('is-show');
+    }, 2200);
+  }
+
+  /* 移动端导航折叠 */
+  var navToggle = document.getElementById('v96NavToggle');
+  var nav = document.getElementById('v96Nav');
+  if(navToggle && nav){
+    navToggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.textContent = open ? '✕' : '☰';
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded','false');
+        navToggle.textContent = '☰';
+      }
+    });
+  }
+
+  /* 搜索前端反馈 */
+  var searchForm = document.getElementById('v96SearchForm');
+  var searchInput = document.getElementById('v96SearchInput');
+  var searchHint = document.getElementById('v96SearchHint');
+  var searchIndex = [
+    '夜航放映室 第三季 城市夜晚',
+    '盲评五款监听耳机 老周评测室',
+    '一台设备拍一整部短片 幕后实验室',
+    '声音设计四步法 声场笔记',
+    '人物访谈 在小众题材里坚持七年',
+    '轻量化露营影像记录 木子车间',
+    '三百块搭出可信场景 布景研究所',
+    '通勤路上的十种光影 阿澈',
+    '创作者激励计划 报名',
+    '数码测评 口碑榜'
+  ];
+  function runSearch(){
+    var q = (searchInput && searchInput.value || '').trim();
+    if(!q){
+      if(searchHint) searchHint.textContent = '';
+      toast('请输入要搜索的关键词');
+      return;
+    }
+    var hits = searchIndex.filter(function(item){
+      return item.indexOf(q) !== -1;
+    });
+    if(hits.length){
+      if(searchHint) searchHint.textContent = '为你找到 ' + hits.length + ' 条相关内容：' + hits.slice(0,3).join(' ｜ ');
+      toast('已展示与「' + q + '」相关的内容');
+    }else{
+      if(searchHint) searchHint.textContent = '暂未找到「' + q + '」的直接结果，已为你推荐站内热门：' + searchIndex[0];
+      toast('暂无完全匹配，已推荐热门内容');
+    }
+  }
+  if(searchForm){
+    searchForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      runSearch();
+    });
+  }
+
+  /* 点赞 / 收藏 */
+  document.querySelectorAll('.v96-like-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var card = btn.closest('.v96-video-card');
+      var counter = card ? card.querySelector('.v96-like-count') : null;
+      var base = counter ? parseInt(counter.getAttribute('data-base'), 10) : 0;
+      var on = btn.classList.toggle('is-on');
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.textContent = on ? '♥ 已赞' : '♡ 点赞';
+      if(counter){
+        var val = base + (on ? 1 : 0);
+        counter.textContent = '点赞 ' + (val >= 10000 ? (val / 10000).toFixed(1) + ' 万' : val.toLocaleString());
+      }
+      toast(on ? '点赞成功，感谢支持' : '已取消点赞');
+    });
+  });
+
+  document.querySelectorAll('.v96-save-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var card = btn.closest('.v96-video-card');
+      var counter = card ? card.querySelector('.v96-save-count') : null;
+      var base = counter ? parseInt(counter.getAttribute('data-base'), 10) : 0;
+      var on = btn.classList.toggle('is-saved');
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.textContent = on ? '★ 已收藏' : '☆ 收藏';
+      if(counter){
+        var val = base + (on ? 1 : 0);
+        counter.textContent = '收藏 ' + (val >= 10000 ? (val / 10000).toFixed(1) + ' 万' : val.toLocaleString());
+      }
+      toast(on ? '已加入收藏夹' : '已取消收藏');
+    });
+  });
+
+  /* 评论展开 */
+  document.querySelectorAll('.v96-comment-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var card = btn.closest('.v96-video-card');
+      var panel = card ? card.querySelector('.v96-comment-panel') : null;
+      if(!panel) return;
+      panel.classList.toggle('v96-hidden');
+      btn.textContent = panel.classList.contains('v96-hidden') ? '✎ 展开评论' : '✎ 收起评论';
+    });
+  });
+
+  /* 复制链接 */
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function(resolve, reject){
+      try{
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        resolve();
+      }catch(err){
+        reject(err);
+      }
+    });
+  }
+  document.querySelectorAll('.v96-copy-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      copyText(window.location.href).then(function(){
+        toast('链接已复制，可分享给朋友');
+      }).catch(function(){
+        toast('复制失败，请手动复制地址栏链接');
+      });
+    });
+  });
+
+  /* 作者弹窗 */
+  var authorModal = document.getElementById('v96AuthorModal');
+  var authorTitle = document.getElementById('v96AuthorModalTitle');
+  var authorField = document.getElementById('v96AuthorModalField');
+  var authorBio = document.getElementById('v96AuthorModalBio');
+  var authorWorks = document.getElementById('v96AuthorModalWorks');
+  var authorFans = document.getElementById('v96AuthorModalFans');
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(!m) return;
+    m.classList.add('is-show');
+    m.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id){
+    var m = document.getElementById(id);
+    if(!m) return;
+    m.classList.remove('is-show');
+    m.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-author]').forEach(function(el){
+    el.addEventListener('click', function(){
+      var name = el.getAttribute('data-author') || '创作者';
+      authorTitle.textContent = name;
+      authorField.textContent = '擅长领域：' + (el.getAttribute('data-field') || '内容创作');
+      authorBio.textContent = el.getAttribute('data-bio') || '';
+      authorWorks.textContent = '作品数：' + (el.getAttribute('data-works') || '0');
+      authorFans.textContent = '粉丝数：' + (el.getAttribute('data-fans') || '0');
+      openModal('v96AuthorModal');
+    });
+  });
+
+  /* 通用弹窗关闭 */
+  document.querySelectorAll('[data-close]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      closeModal(btn.getAttribute('data-close'));
+    });
+  });
+  document.querySelectorAll('.v96-modal').forEach(function(m){
+    m.addEventListener('click', function(e){
+      if(e.target === m){
+        closeModal(m.id);
+      }
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.v96-modal.is-show').forEach(function(m){
+        closeModal(m.id);
+      });
+    }
+  });
+
+  /* 投稿弹窗 */
+  var submitModal = document.getElementById('v96SubmitModal');
+  var submitTriggers = ['v96SubmitOpen','v96HeroSubmit','v96CtaSubmit'];
+  submitTriggers.forEach(function(id){
+    var btn = document.getElementById(id);
+    if(btn){
+      btn.addEventListener('click', function(){ openModal('v96SubmitModal'); });
+    }
+  });
+  var submitForm = document.getElementById('v96SubmitForm');
+  if(submitForm){
+    submitForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var title = document.getElementById('v96SName').value.trim();
+      if(!title){
+        toast('请填写作品标题');
+        return;
+      }
+      submitForm.reset();
+      closeModal('v96SubmitModal');
+      toast('投稿已提交，48 小时内将收到审核反馈');
+    });
+  }
+
+  /* 分享 */
+  var shareBtn = document.getElementById('v96ShareBtn');
+  if(shareBtn){
+    shareBtn.addEventListener('click', function(){ openModal('v96ShareModal'); });
+  }
+  var shareCopy = document.getElementById('v96ShareCopy');
+  if(shareCopy){
+    shareCopy.addEventListener('click', function(){
+      copyText(window.location.href).then(function(){
+        closeModal('v96ShareModal');
+        toast('链接已复制，可分享给朋友');
+      }).catch(function(){
+        toast('复制失败，请手动复制地址栏链接');
+      });
+    });
+  }
+  var shareWechat = document.getElementById('v96ShareWechat');
+  if(shareWechat){
+    shareWechat.addEventListener('click', function(){
+      copyText(window.location.href).then(function(){
+        toast('链接已复制，可直接粘贴到微信');
+      }).catch(function(){
+        toast('请手动复制地址栏链接后在微信中粘贴');
+      });
+    });
+  }
+  var shareWeibo = document.getElementById('v96ShareWeibo');
+  if(shareWeibo){
+    shareWeibo.addEventListener('click', function(){
+      toast('已生成微博分享内容，请前往微博粘贴');
+    });
+  }
+  var shareQQ = document.getElementById('v96ShareQQ');
+  if(shareQQ){
+    shareQQ.addEventListener('click', function(){
+      toast('已生成 QQ 分享内容，请前往 QQ 粘贴');
+    });
+  }
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('v96TopBtn');
+  if(topBtn){
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 420){
+        topBtn.classList.add('is-show');
+      }else{
+        topBtn.classList.remove('is-show');
+      }
+    }, {passive:true});
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+})();
+</script>
+</body>
+  </html>
